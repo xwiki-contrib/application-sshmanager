@@ -46,7 +46,7 @@
   #foreach($key in $keys)
     #set ($keyDoc = $xwiki.getDocument($key))
     #set ($keyObj = $keyDoc.getObject('SSHManager.PublicKeys.Code.PublicKeysClass'))
-    $keyObj.getValue('publicKey')
+    {{{$keyObj.getValue('publicKey')}}}
   #end
 #end
 #if ($xcontext.action == 'get')

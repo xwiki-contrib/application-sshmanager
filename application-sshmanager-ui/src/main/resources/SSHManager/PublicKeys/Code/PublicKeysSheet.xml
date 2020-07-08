@@ -45,7 +45,11 @@
 (% class="xform" %)
 (((
   ; &lt;label#if ($xcontext.action == 'edit') for="SSHManager.PublicKeys.Code.PublicKeysClass_0_publicKey"#end&gt;$escapetool.xml($doc.displayPrettyName('publicKey', false, false))&lt;/label&gt;
+  #if ($xcontext.action == 'edit')
   : $doc.display('publicKey')
+  #else
+  : {{{$doc.getValue('publicKey')}}}
+  #end
 )))
 {{/html}}
 {{/velocity}}</content>
