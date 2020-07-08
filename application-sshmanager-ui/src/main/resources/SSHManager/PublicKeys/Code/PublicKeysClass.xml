@@ -50,9 +50,10 @@
     <nameField/>
     <validationScript/>
     <publicKey>
+      <contenttype>PureText</contenttype>
       <customDisplay/>
       <disabled>0</disabled>
-      <editor>Text</editor>
+      <editor>PureText</editor>
       <hint/>
       <name>publicKey</name>
       <number>1</number>
